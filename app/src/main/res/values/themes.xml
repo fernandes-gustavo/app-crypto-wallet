@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CryptoWallet" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/crypto_background</item>
+        <item name="colorPrimary">@color/crypto_accent</item>
+        <item name="colorSecondary">@color/crypto_accent</item>
+        <item name="android:textColorPrimary">@color/crypto_text_primary</item>
+        <item name="android:textColorSecondary">@color/crypto_text_secondary</item>
+    </style>
+
+    <style name="Theme.CryptoWallet" parent="Base.Theme.CryptoWallet" />
+</resources>

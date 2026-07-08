@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Crypto Wallet</string>
+    <string name="balance_format">$ %1$s</string>
+    <string name="my_wallet">Minha Carteira</string>
+    <string name="total_assets">Patrimônio Total</string>
+    <string name="cart">🛒</string>
+    <string name="empty_wallet">Sua carteira está vazia</string>
+    <string name="return_shopping">Volte à tela inicial e vá às compras!</string>
+    <string name="main_title">Mercado Crypto</string>
+    <string name="wallet">Carteira</string>
+    <string name="hint_example_buy">Quantidade (Ex: 0.5)</string>
+    <string name="confirmate_buy">Confirmar Compra</string>
+    <string name="hint_edit">Novo saldo (Ex: 2.0 ou 0 para deletar)</string>
+    <string name="save_alteration">Salvar Alteração</string>
+</resources>

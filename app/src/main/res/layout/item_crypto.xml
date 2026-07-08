@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginVertical="4dp"
+    android:layout_marginHorizontal="8dp"
+    android:background="@color/crypto_surface"
+    android:elevation="2dp">
+
+    <ImageView
+        android:id="@+id/ivCryptoIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvCryptoName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/crypto_text_primary"
+        app:layout_constraintStart_toEndOf="@id/ivCryptoIcon"
+        app:layout_constraintTop_toTopOf="@id/ivCryptoIcon"
+        tools:text="Bitcoin" />
+
+    <TextView
+        android:id="@+id/tvCryptoSymbol"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/crypto_text_secondary"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="@id/tvCryptoName"
+        app:layout_constraintTop_toBottomOf="@id/tvCryptoName"
+        tools:text="btc" />
+
+    <TextView
+        android:id="@+id/tvCryptoPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/crypto_text_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvCryptoName"
+        tools:text="$60,000.00" />
+
+    <TextView
+        android:id="@+id/tvOwnedQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/crypto_accent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCryptoPrice"
+        tools:text="Possui: 0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

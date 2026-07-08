@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/crypto_surface"
+    android:padding="24dp">
+
+    <!-- Tracinho no topo -->
+    <View
+        android:id="@+id/dragHandle"
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:background="@color/crypto_text_secondary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEditTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/crypto_text_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dragHandle"
+        tools:text="Editar Bitcoin" />
+
+    <TextView
+        android:id="@+id/tvCurrentQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/crypto_text_secondary"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEditTitle"
+        tools:text="Saldo atual: 1.5" />
+
+    <!-- Campo de texto já formatado para números decimais -->
+    <EditText
+        android:id="@+id/etNewQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/crypto_accent"
+        android:hint="@string/hint_edit"
+        android:inputType="numberDecimal"
+        android:textColor="@color/crypto_text_primary"
+        android:textColorHint="@color/crypto_text_secondary"
+        app:layout_constraintTop_toBottomOf="@id/tvCurrentQuantity" />
+
+    <!-- Botão de Salvar -->
+    <Button
+        android:id="@+id/btnSaveEdit"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/crypto_accent"
+        android:text="@string/save_alteration"
+        android:textColor="@color/crypto_background"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/etNewQuantity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

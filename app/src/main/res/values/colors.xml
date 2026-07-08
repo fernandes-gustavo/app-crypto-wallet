@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="crypto_background">#121212</color> <!-- Fundo escuro -->
+    <color name="crypto_surface">#1E1E1E</color> <!-- Fundo dos cards/itens -->
+    <color name="crypto_accent">#00E676</color> <!-- Verde neon para botões e detalhes -->
+    <color name="crypto_text_primary">#FFFFFF</color> <!-- Texto principal branco -->
+    <color name="crypto_text_secondary">#A0A0A0</color> <!-- Texto secundário cinza -->
+</resources>
